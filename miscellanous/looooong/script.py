@@ -22,6 +22,7 @@ end = re.search("followed by a single '([a-zA-Z0-9])'", instructions).group(1)
 # Parse reply
 reply = (letter * count) + end + "\n"
 
+
 # Send reply
 s.send(reply.encode("utf-8"))
 
